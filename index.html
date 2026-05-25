@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Diseño de llaveros 3D con SVG en Tinkercad</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f8;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:#263238;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+section{
+    max-width:1100px;
+    margin:25px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#1565c0;
+    border-bottom:3px solid #1565c0;
+    padding-bottom:10px;
+}
+
+h3{
+    color:#2e7d32;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#fafafa;
+    border:2px solid #ddd;
+    border-radius:12px;
+    padding:20px;
+}
+
+.paso{
+    background:#eef7ee;
+    border-left:8px solid #43a047;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+}
+
+.icono{
+    display:inline-block;
+    background:#1565c0;
+    color:white;
+    padding:5px 10px;
+    border-radius:8px;
+    font-weight:bold;
+    margin:5px 0;
+}
+
+.importante{
+    background:#fff3cd;
+    border-left:8px solid #ff9800;
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+.consejo{
+    background:#e3f2fd;
+    border-left:8px solid #1565c0;
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+svg{
+    width:100%;
+    height:200px;
+    background:white;
+    border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Diseño de llaveros 3D con SVG en Tinkercad</h1>
+    <p>Aprendemos a importar imágenes SVG, crear relieves y preparar objetos para impresión 3D.</p>
+</header>
+
+<section>
+
+<h2>¿Qué vamos a hacer?</h2>
+
+<p>
+Vamos a diseñar un llavero en 3D utilizando:
+</p>
+
+<ul>
+<li>Una base rectangular o circular.</li>
+<li>Una imagen SVG en relieve.</li>
+<li>Un agujero para la anilla.</li>
+<li>Texto personalizado.</li>
+</ul>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Llavero rectangular</h3>
+
+<svg viewBox="0 0 300 180">
+
+<rect x="40" y="50" width="220" height="90" rx="15"
+fill="#90caf9"
+stroke="#1565c0"
+stroke-width="5"/>
+
+<circle cx="70" cy="80" r="15"
+fill="white"
+stroke="#1565c0"
+stroke-width="5"/>
+
+<text x="120" y="105"
+font-size="28"
+fill="#0d47a1">SVG</text>
+
+</svg>
+
+</div>
+
+<div class="card">
+
+<h3>Llavero circular</h3>
+
+<svg viewBox="0 0 300 180">
+
+<circle cx="150" cy="95" r="60"
+fill="#a5d6a7"
+stroke="#2e7d32"
+stroke-width="5"/>
+
+<circle cx="150" cy="35" r="12"
+fill="white"
+stroke="#2e7d32"
+stroke-width="5"/>
+
+<text x="120" y="105"
+font-size="28"
+fill="#1b5e20">SVG</text>
+
+</svg>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Paso 1 — Crear un diseño nuevo</h2>
+
+<div class="paso">
+
+<p>
+Entramos en 
+<strong>Tinkercad</strong> y pulsamos:
+</p>
+
+<div class="icono">
++ Crear diseño
+</div>
+
+<p>
+Se abrirá el plano de trabajo azul.
+</p>
+
+<p>
+Ese plano representa la superficie donde colocaremos nuestras piezas.
+</p>
+
+<div class="consejo">
+
+<strong>Consejo:</strong>
+
+Usa la rueda del ratón para acercar y alejar el zoom.
+
+Mantén pulsado el botón derecho del ratón para girar la cámara.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Paso 2 — Crear la base del llavero</h2>
+
+<div class="paso">
+
+<p>
+En la parte derecha aparece el panel:
+</p>
+
+<div class="icono">
+Formas básicas
+</div>
+
+<p>
+Busca la figura:
+</p>
+
+<div class="icono">
+Caja
+</div>
+
+<p>
+Arrastra la caja al plano azul.
+</p>
+
+<p>
+Ahora aparecerán pequeños cuadrados blancos alrededor de la figura.
+</p>
+
+<p>
+Sirven para cambiar el tamaño.
+</p>
+
+<h3>Medidas recomendadas</h3>
+
+<ul>
+<li>Ancho: 60 mm</li>
+<li>Fondo: 45 mm</li>
+<li>Altura: 3 mm</li>
+</ul>
+
+<div class="importante">
+
+<strong>Importante:</strong>
+
+La altura de 3 mm es el grosor del llavero.
+
+Si el grosor es demasiado pequeño la pieza puede romperse.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Paso 3 — Importar la imagen SVG</h2>
+
+<div class="paso">
+
+<p>
+En la esquina superior derecha pulsa:
+</p>
+
+<div class="icono">
+Importar
+</div>
+
+<p>
+Selecciona el archivo SVG descargado.
+</p>
+
+<p>
+Tinkercad convertirá automáticamente la imagen en una figura 3D.
+</p>
+
+<h3>¿Qué es un SVG?</h3>
+
+<p>
+Un SVG es una imagen vectorial formada por líneas y formas.
+</p>
+
+<p>
+Las imágenes SVG funcionan mucho mejor en impresión 3D que las fotografías normales.
+</p>
+
+<div class="consejo">
+
+<strong>Consejo:</strong>
+
+Las mejores imágenes SVG son:
+</p>
+
+<ul>
+<li>Siluetas negras.</li>
+<li>Imágenes simples.</li>
+<li>Pocos detalles.</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Paso 4 — Cambiar el tamaño del SVG</h2>
+
+<div class="paso">
+
+<p>
+Selecciona la imagen importada.
+</p>
+
+<p>
+Aparecerán cuadrados blancos en las esquinas.
+</p>
+
+<p>
+Arrastra esos cuadrados para hacer la imagen más grande o más pequeña.
+</p>
+
+<p>
+También puedes escribir medidas exactas directamente.
+</p>
+
+<h3>Altura recomendada del relieve</h3>
+
+<ul>
+<li>1,5 mm → relieve bajo</li>
+<li>2 mm → relieve normal</li>
+<li>3 mm → relieve alto</li>
+</ul>
+
+<div class="importante">
+
+<strong>Importante:</strong>
+
+La imagen debe estar apoyada sobre la base.
+
+NO debe flotar en el aire.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Paso 5 — Centrar la imagen</h2>
+
+<div class="paso">
+
+<p>
+Selecciona:
+</p>
+
+<ul>
+<li>La base.</li>
+<li>La imagen SVG.</li>
+</ul>
+
+<p>
+Pulsa el botón:
+</p>
+
+<div class="icono">
+Alinear
+</div>
+
+<p>
+Aparecerán varios puntos negros alrededor de las figuras.
+</p>
+
+<p>
+Pulsa los puntos centrales para centrar la imagen sobre la base.
+</p>
+
+<div class="consejo">
+
+<strong>Consejo:</strong>
+
+La herramienta Alinear evita colocar objetos “a ojo”.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Paso 6 — Crear el agujero del llavero</h2>
+
+<div class="paso">
+
+<p>
+En el panel de formas básicas arrastra:
+</p>
+
+<div class="icono">
+Cilindro
+</div>
+
+<p>
+Selecciona el cilindro.
+</p>
+
+<p>
+Ahora busca en la esquina superior derecha:
+</p>
+
+<div class="icono">
+Sólido / Hueco
+</div>
+
+<p>
+Cambia el cilindro a:
+</p>
+
+<div class="icono">
+Hueco
+</div>
+
+<p>
+El cilindro se volverá transparente.
+</p>
+
+<p>
+Eso significa que eliminará material al agrupar.
+</p>
+
+<h3>Medidas recomendadas</h3>
+
+<ul>
+<li>Diámetro: 5 mm</li>
+<li>Altura: 10 mm</li>
+</ul>
+
+<p>
+Coloca el cilindro en una esquina de la base.
+</p>
+
+<div class="importante">
+
+<strong>Importante:</strong>
+
+El cilindro debe atravesar completamente la base.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Paso 7 — Agrupar todas las piezas</h2>
+
+<div class="paso">
+
+<p>
+Selecciona:
+</p>
+
+<ul>
+<li>La base.</li>
+<li>La imagen SVG.</li>
+<li>El cilindro hueco.</li>
+</ul>
+
+<p>
+Pulsa:
+</p>
+
+<div class="icono">
+Agrupar
+</div>
+
+<p>
+Ahora:
+</p>
+
+<ul>
+<li>La imagen quedará unida.</li>
+<li>El cilindro creará el agujero.</li>
+<li>Todo será una sola pieza.</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Paso 8 — Exportar para impresión 3D</h2>
+
+<div class="paso">
+
+<p>
+Pulsa:
+</p>
+
+<div class="icono">
+Exportar
+</div>
+
+<p>
+Selecciona:
+</p>
+
+<div class="icono">
+STL
+</div>
+
+<p>
+Ese archivo STL es el que usará la impresora 3D.
+</p>
+
+<div class="consejo">
+
+<strong>Consejo:</strong>
+
+Antes de imprimir:
+</p>
+
+<ul>
+<li>Comprueba que nada flota.</li>
+<li>Comprueba que el agujero atraviesa.</li>
+<li>Comprueba que todo está agrupado.</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Ideas para vuestros diseños</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Semana Santa</h3>
+
+<ul>
+<li>Nazareno</li>
+<li>Cruz</li>
+<li>Cirio</li>
+<li>Corona de espinas</li>
+<li>Incensario</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Equipos de fútbol</h3>
+
+<ul>
+<li>Betis</li>
+<li>Sevilla</li>
+<li>Real Madrid</li>
+<li>Barcelona</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Andalucía</h3>
+
+<ul>
+<li>Giralda</li>
+<li>Olivo</li>
+<li>Guitarra</li>
+<li>Flamenca</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
